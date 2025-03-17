@@ -5,17 +5,17 @@ function fetchResult() {
     const num2 = document.getElementById('num2').value;
     const operation = document.getElementById('operation').value;
 
-    // Convert inputs to numbers
+    
     const num1Value = parseFloat(num1);
     const num2Value = parseFloat(num2);
 
-    // Validate inputs
+    
     if (isNaN(num1Value) || isNaN(num2Value)) {
         alert('Please enter both numbers.');
         return;
     }
 
-    // Make a POST request to the server for calculation
+    
     fetch('http://localhost:3000/calculate', {
         method: 'POST',
         headers: {

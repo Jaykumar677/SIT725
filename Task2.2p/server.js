@@ -3,13 +3,13 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 
-// Middleware to parse JSON bodies for POST requests
+
 app.use(express.json());
 
-// Enable CORS for all origins
+
 app.use(cors());
 
-// Route to add two numbers (GET)
+
 app.get('/add', (req, res) => {
     const num1 = 5;
     const num2 = 10;
@@ -17,7 +17,7 @@ app.get('/add', (req, res) => {
     res.json({ result: result });
 });
 
-// Route to subtract two numbers (GET)
+
 app.get('/subtract', (req, res) => {
     const num1 = 10;
     const num2 = 5;
@@ -25,7 +25,7 @@ app.get('/subtract', (req, res) => {
     res.json({ result: result });
 });
 
-// Route to multiply two numbers (GET)
+
 app.get('/multiply', (req, res) => {
     const num1 = 5;
     const num2 = 10;
@@ -33,7 +33,7 @@ app.get('/multiply', (req, res) => {
     res.json({ result: result });
 });
 
-// Route to divide two numbers (GET)
+
 app.get('/divide', (req, res) => {
     const num1 = 10;
     const num2 = 5;
@@ -45,11 +45,11 @@ app.get('/divide', (req, res) => {
     }
 });
 
-// POST route to calculate dynamically (basic calculator)
+
 app.post('/calculate', (req, res) => {
     const { num1, num2, operation } = req.body;
     
-    // Check if the numbers are valid
+    
     if (isNaN(num1) || isNaN(num2)) {
         return res.status(400).json({ error: "Invalid numbers provided." });
     }
@@ -79,7 +79,7 @@ app.post('/calculate', (req, res) => {
     res.json({ result: result });
 });
 
-// Start the server
+
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
