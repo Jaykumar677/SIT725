@@ -1,0 +1,92 @@
+body, html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Heading Styles */
+#heading {
+    color: green;
+}
+
+/* Input and Select Styling */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    padding: 10px; /* Reduced padding */
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    background-color: #f0f8ff;
+    width: 250px; /* Reduced width */
+    margin: 20px 0; /* Keeps it left-aligned */
+}
+
+/* Adjust input fields and select size within the box */
+.input-container input[type="number"], 
+.input-container select {
+    width: 90%; /* Slightly reduced width of input fields */
+    margin: 5px 0;
+    padding: 6px; /* Adjust padding for smaller size */
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.input-container label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Button Styling */
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners for the button */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Result Styling */
+h3 {
+    color: rgb(139, 118, 0);
+    font-size: 18px;
+    text-align: left; /* Align result text to the left */
+    margin-left: 10px; /* Adds a small margin for better spacing */
+}
+
+/* Styling for Materialize Select */
+select {
+    display: block;
+    width: 80%; /* Ensures the select box is smaller */
+    font-size: 14px;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+/* Flex container for buttons */
+.button-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns buttons to the left */
+    align-items: center;
+}
+
+/* Add responsive styling for small screens */
+@media (max-width: 300px) {
+    .input-container input, 
+    .input-container select, 
+    button {
+        width: 100%;
+    }
+}
