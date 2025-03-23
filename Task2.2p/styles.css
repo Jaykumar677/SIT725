@@ -1,0 +1,92 @@
+body, html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#heading {
+    color: green;
+}
+
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 10px; 
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    background-color: #f0f8ff;
+    width: 250px; 
+    margin: 20px 0; 
+}
+
+
+.input-container input[type="number"], 
+.input-container select {
+    width: 90%; 
+    margin: 5px 0;
+    padding: 6px; 
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.input-container label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; 
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+h3 {
+    color: rgb(139, 118, 0);
+    font-size: 18px;
+    text-align: left; 
+    margin-left: 10px; 
+}
+
+
+select {
+    display: block;
+    width: 80%; 
+    font-size: 14px;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+
+@media (max-width: 300px) {
+    .input-container input, 
+    .input-container select, 
+    button {
+        width: 100%;
+    }
+}
