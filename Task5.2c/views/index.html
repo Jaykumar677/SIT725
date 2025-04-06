@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SIT725 Task3.2P</title>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- For icons -->
+</head>
+
+<body>
+    
+    <nav>
+        <div class="nav-wrapper light-green">
+            <a href="#" class="brand-logo left">
+                <img src="logo.png" alt="Logo" style="height: 65px;">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h1 class="center-align">Welcome to SIT 725 Task3.2P</h1>
+                <br />
+                <p>This is a demo application to show the Functions and alerts in it.</p>
+                <br><br>
+
+                
+                <div class="image-container">
+                    <img src="livedemo.webp" alt="live demo">
+                </div>
+
+                
+                <div class="center-align">
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Click Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Please fill in the details:</h4>
+            <form id="user-form" method="POST" action="/submit">
+                <div class="input-field">
+                    <input type="text" id="first-name" name="first_name" required>
+                    <label for="first-name">First Name</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" id="last-name" name="last_name" required>
+                    <label for="last-name">Last Name</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="input-field">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <button type="submit" class="waves-effect waves-light btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            M.Modal.init(elems);
+
+            var dropdowns = document.querySelectorAll('.dropdown-trigger');
+            M.Dropdown.init(dropdowns, { constrainWidth: false });
+        });
+    </script>
+
+    
+    <div class="row center-align">
+        
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="guitar1.jpg" alt="Image 1">
+                    
+                    <a class="btn-floating halfway-fab waves-effect waves-light grey darken-1 dropdown-trigger"
+                       href="#" data-target="dropdown1">
+                        <i class="material-icons">more_vert</i>
+                    </a>
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="#">Action 1</a></li>
+                        <li><a href="#">Action 2</a></li>
+                        <li><a href="#">Action 3</a></li>
+                    </ul>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">About guitar 1</span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="guitar2.jpg" alt="Image 2">
+                    <a class="btn-floating halfway-fab waves-effect waves-light grey darken-1 dropdown-trigger"
+                       href="#" data-target="dropdown2">
+                        <i class="material-icons">more_vert</i>
+                    </a>
+                    <ul id="dropdown2" class="dropdown-content">
+                        <li><a href="#">Action 1</a></li>
+                        <li><a href="#">Action 2</a></li>
+                        <li><a href="#">Action 3</a></li>
+                    </ul>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">About Guitar 2</span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="guitar3.jpg" alt="Image 3">
+                    <a class="btn-floating halfway-fab waves-effect waves-light grey darken-1 dropdown-trigger"
+                       href="#" data-target="dropdown3">
+                        <i class="material-icons">more_vert</i>
+                    </a>
+                    <ul id="dropdown3" class="dropdown-content">
+                        <li><a href="#">Action 1</a></li>
+                        <li><a href="#">Action 2</a></li>
+                        <li><a href="#">Action 3</a></li>
+                    </ul>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">About Guitar 3</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
