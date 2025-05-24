@@ -145,3 +145,29 @@ npm install
 node app.js
 
 
+### How to Run Docker Conatiner
+
+##### To build the docket image use:
+
+docker build -t lacevista
+
+##### to run the Container:
+
+docker run -p 3000:3000 lacevista
+
+##### port to Access:
+
+Main App: http://localhost:3000
+Student API: http://localhost:3000/api/student
+
+##### Output:
+
+{"name":"Jay Kumar","studentId":"223558027" }
+
+
+
+
+
+
+
+
