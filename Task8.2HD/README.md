@@ -149,11 +149,11 @@ node app.js
 
 ##### To build the docket image use:
 
-docker build -t lacevista
+docker build -t task82hd-app .
 
 ##### to run the Container:
 
-docker run -p 3000:3000 lacevista
+docker run --env-file .env -p 3000:3000 task82hd-app
 
 ##### port to Access:
 
