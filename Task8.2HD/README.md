@@ -147,6 +147,14 @@ node app.js
 
 ### How to Run Docker Conatiner
 
+**Note:**
+The `.env` file is excluded from version control (see `.gitignore`).  
+Please create a `.env` file in the root directory with the following:
+
+PORT=3000  
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/lacevista
+
+
 ##### To build the docket image use:
 
 docker build -t task82hd-app .
